@@ -1,8 +1,7 @@
 # configured aws provider with proper credentials
 provider "aws" {
    region     = "ap-south-1"
-  access_key = "AKIAUUELHXHM7W6LNKMA"
-  secret_key = "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"
+   profile    = "default"
 }
 
 
@@ -12,9 +11,7 @@ terraform {
     bucket  = "aosnote-terraform-state-buckets"
     key     = "build/terraform.tfstate"
     region  = "ap-south-1"
-    profile = "terraform-user"
-      access_key = "AKIAUUELHXHM7W6LNKMA"
-  secret_key = "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"
+    profile = "default"
   }
 }
 
